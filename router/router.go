@@ -15,4 +15,5 @@ func SetupRoutes(app *fiber.App) {
 	todo.Put("/:id", handler.UpdateTodo)
 	todo.Delete("/:id", handler.DeleteTodo)
 	todo.Get("/all/todos", handler.ReadAllTodo)
+	todo.Get("/all", handler.DummyAllHandler)
 }

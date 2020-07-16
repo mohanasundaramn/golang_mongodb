@@ -118,3 +118,9 @@ func ReadAllTodo(c *fiber.Ctx) {
 
 	c.Status(200).JSON(fiber.Map{"success": true, "todos": todos})
 }
+
+func DummyAllHandler(c *fiber.Ctx) {
+	c.Status(200).JSON(fiber.Map{
+		"message": "DummyAllHandler",
+	})
+}
